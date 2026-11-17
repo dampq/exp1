@@ -1,0 +1,5 @@
+Machine Learning
+Machine learning is a subset of artificial intelligence in which systems learn patterns from data to make predictions or decisions.
+Supervised learning uses labeled examples, unsupervised learning discovers structure in unlabeled data, and reinforcement learning learns through rewards from interaction.
+Common methods include linear regression, decision trees, and neural networks. Training, validation, and test datasets help measure generalization and detect overfitting.
+Applications include spam detection, forecasting, and recommendation systems.

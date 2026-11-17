@@ -1,0 +1,4 @@
+Artificial Intelligence (AI)
+Artificial intelligence is the field of building systems that perform tasks requiring human-like intelligence, including reasoning, planning, language understanding, and perception.
+Machine learning is a subset of AI that learns patterns from data. Deep learning is a subset of machine learning based on multi-layer neural networks.
+AI applications include research assistants, medical image analysis, and recommendation systems. Reliable AI requires evaluation, privacy protection, and attention to bias.

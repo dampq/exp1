@@ -1,0 +1,5 @@
+Deep Learning
+Deep learning is a subset of machine learning that uses multi-layer neural networks to learn hierarchical representations from data.
+Convolutional neural networks (CNNs) are commonly used for image recognition. A CNN learns spatial features through convolutional layers.
+Recurrent neural networks process sequences, while transformers use attention to model relationships between tokens.
+Deep learning often requires substantial training data and computation. Regularization and independent test sets help assess generalization.
