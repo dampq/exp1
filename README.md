@@ -3,6 +3,27 @@
 ## Aim
 Build an MCP server that gives an LLM-based assistant standardized access to research documents. This demonstration uses three short, synthetic teaching documents, not published research papers.
 
+## Run the interactive assistant
+
+After installation, run `.venv/bin/python client.py` from the repository root.
+Wait for `You:`, type a question, and press Enter:
+
+```text
+You: What is deep learning?
+
+Answer (source excerpt):
+Deep learning is a subset of machine learning that uses multi-layer neural networks to
+learn hierarchical representations from data.
+
+Source: deep_learning.txt
+```
+
+Try `Which document discusses CNN?`, `Find documents related to neural networks.`,
+or `Summarize the machine learning document.` Type `list` to see documents and
+`exit` to close the assistant. Summaries quote the first three source sentences;
+answers use simple keyword matching, so rephrase if a relevant passage is missed.
+For the raw developer demo, run `.venv/bin/python demo.py`.
+
 ## Architecture
 
 ```text
@@ -13,7 +34,7 @@ User question → AI assistant (MCP host + LLM)
              research_documents/*.txt
 ```
 
-The server exposes tools; the assistant chooses which tools to call and generates an answer from their results. The server itself does not run an LLM. `client.py` is a deterministic protocol demonstration, not an AI answer generator.
+The server exposes tools; the assistant chooses which tools to call and generates an answer from their results. The server itself does not run an LLM. `client.py` is an interactive terminal assistant that retrieves source excerpts through MCP. It needs no API key and does not generate text with an LLM. `demo.py` preserves the raw protocol demonstration.
 
 ## Install and verify
 
